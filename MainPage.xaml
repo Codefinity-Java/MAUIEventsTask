@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MAUIEventsTask.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            <Slider 
+                x:Name="sizeSlider"
+                Minimum="10"
+                Maximum="100"
+                Value="10" />
+
+            <Button
+                x:Name="setSizeBtn"
+                Text="Set Size" 
+                SemanticProperties.Hint="Counts the number of times you click"
+                HorizontalOptions="Fill" />
+
+            <Label
+                x:Name="mainLabel"
+                Text="Hello World!"
+                FontSize="10" />
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
